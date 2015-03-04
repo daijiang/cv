@@ -1,0 +1,241 @@
+\documentclass[11pt,oneside]{article}
+% \documentclass[11pt,article,oneside]{memoir}   
+
+% fonts
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Gentium Basic}
+% \defaultfontfeatures{
+%     Path = /usr/local/texlive/2013/texmf-dist/fonts/opentype/public/fontawesome/ }
+\usepackage{fontawesome}
+% \usepackage[usenames,dvipsnames]{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+% \usepackage{xltxtra}
+% \defaultfontfeatures{Mapping=tex-text}
+% \setromanfont[Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+% \setmonofont[Scale=0.8]{Monaco}
+
+% links
+\usepackage[pdfusetitle,pdftitle={Daijiang Li - vita},pdfauthor={Daijiang Li},
+bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=true,urlcolor=BlueViolet]
+ {hyperref}
+
+\usepackage{array}
+\usepackage{datetime}
+\usepackage{ragged2e}
+% \usepackage{paralist}
+\usepackage{fancyhdr,enumitem}
+
+\usepackage{revnum}
+
+\def\twidth{16cm}  % texwidth in cm. Letter paper size: 21.59 × 27.94 cm. 4.59/2 = 2.3 
+\usepackage[letterpaper,text={\twidth,23.0cm},centering]{geometry}
+\usepackage[compact,small,sf,bf]{titlesec}
+% \usepackage{kpfonts,dsfont}
+
+\RaggedRight
+\sloppy
+
+% Header and footer
+% \usepackage{lastpage}
+\pagestyle{fancy}
+\lhead{\sf Curriculum Vitae: Daijiang Li}
+\rhead{\sf\thepage} % of \pageref{LastPage}
+\cfoot{}
+
+% Date format
+\newdateformat{dli}{\monthname~\THEYEAR}
+\dli
+
+% Head shade box.
+\newcommand{\shadebox}[3][white]{\colorbox{#1}{\parbox{#2}{#3}}}
+
+\def\maketitle{
+\thispagestyle{plain}
+\vspace*{-1.4cm}
+\shadebox[gray!10]{\twidth}{\sf\color[rgb]{0.6,0,0} % bg color here
+\hbox to \twidth{\begin{tabular}{p{6.0cm}}
+\LARGE\textbf{Daijiang Li}\\[0.3cm]  % name here
+\large\textbf{Curriculum Vitae}\\[0.6cm]
+\normalsize{Last updated: \today}
+\end{tabular}
+\hfill\hbox{\fontsize{9}{12}\sf
+\begin{tabular}{@{}rp{8.2cm}@{}}
+									% Information here
+\faHome & Department of Botany, University of Wisconsin-Madison, Madison, WI, 53705.\\
+      \faPhone & +1 608-265-2191\\
+      \faEnvelopeAlt & \texttt{\href{mailto:daijianglee@gmail.com}{daijianglee@gmail.com}}\\
+      \faGlobe & \texttt{\href{www.daijiang.name}{www.daijiang.name}} \\
+      \faTwitter & \texttt{\href{http://twitter.com/_djli}{@\_djli}}
+\end{tabular}}}
+}
+\vspace*{0.2cm}}
+
+% Section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titleformat*{\section}{\color[rgb]{0.6,0,0}\large\sf\bfseries}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{nolistsep}
+% \setlist{itemsep=0pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
+
+%% Custom hanging indent for vita items
+\def\ind{\vspace{0.3em} \hangindent=1.25 true cm\hangafter=1 \noindent }
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+%% No bullets on labels
+% \def\labelitemi{~}
+% \renewcommand{\labelitemii}{~}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+\section{Education}
+\ind 2011 -- Now, Ph.D. student, Department of Botany, University of Wisconsin-Madison\\
+	\ind \hspace{1.25cm} \footnotesize Committee: Donald M. Waller (chair), Ellen I. Damschen, Thomas J. Givnish, Anthony R. Ives, Bret R. Larget\\ \vspace{-0.3em}
+	\ind \hspace{1.25cm} Dissertation: Long-term dynamics of pine barrens in central Wisconsin
+\normalsize
+
+\ind 2013 -- Now, M.S. Biometry, Department of Statistics, University of Wisconsin-Madison
+
+\ind 2008 -- 2011, M.S., School of Life Science, Sun Yat-sen University, China
+
+\ind 2004 -- 2008, B.S., School of Life Science, Yunnan University, China
+
+
+\section{Research Interests}
+\ind Plant community assembly (taxonomic, functional and phylogenetic), Diversity and ecosystem functioning, Network analysis, Species co-occurrence, Multi-level model, Global change.
+
+\section{Academic Appointments}
+\ind 2014 -- 2015, Graduate Student Research Assistant, Department of Botany, University of Wisconsin-Madison.
+
+\ind 2012 -- 2013, Graduate Student Teaching Assistant, Department of Botany, University of Wisconsin-Madison.
+
+\ind 2011 -- 2012, Graduate Student Research Assistant, Department of Botany, University of Wisconsin-Madison.
+
+\ind 2008 -- 2011, Graduate Student Research Assistant, School of Life Science, State Key Laboratory of Biocontrol, Sun Yat-sen University, China.
+
+\section{Publications}
+\noindent\emph{Journal articles}
+\vspace{0.05in}
+\begin{revnumerate}
+\itemsep -0.1em 
+	\item \textbf{Daijiang Li} and Donald Waller. \emph{In press}. \href{http://www.esajournals.org/doi/abs/10.1890/14-0893.1}{Drivers of observed biotic homogenization in pine barrens of central Wisconsin.} \emph{Ecology}.
+
+	\item \textbf{Daijiang Li}, Shaolin Peng, Baoming Chen. (2013). \href{http://www.daijiang.name/pdf/D_Li_2012_plantsoil.pdf}{The effects of leaf litter evenness on decomposition depend on which plant functional group is dominant.} \emph{Plant and Soil}. 365:1-2, 255-266. 
+
+	\item Baoming Chen, Shaolin Peng, Carla M. D'Antonio, \textbf{Daijiang Li}, Wentao Ren. (2013). \href{http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0066289}{Non-Addiitive Effects on Decomposition from Mixing Litter of the Invasive \emph{Mikania micrantha} H.B.K. with Native Plants.} \emph{PLoS ONE}. 8(6): e66289.
+
+	% \vspace{-0.3em}
+	% \ind \hspace{0cm} Some noteable thing about this paper...
+
+	\item Bosun Wang, Shaolin Peng, \textbf{Daijiang Li}, Ting Zhou. (2009). Research progress on \emph{Merremia boisiana}. \emph{Chinese Journal of Ecology}. 28 (11), 2360-2365.
+\end{revnumerate}
+
+\noindent\emph{Manuscripts in review or preparation}
+\vspace{0.05in}
+\begin{revnumerate}
+\itemsep -0.1em 
+	\item \textbf{Daijiang Li} and Donald Waller. \emph{In press}. Long-term shifts in the forces driving community assembly inferred from plant co-occurrence patterns. \emph{Submitted}.
+\end{revnumerate}
+
+
+\section{Awards and Grants}
+\ind 2013 -- 2014, The Flora Aeterna Research Grant, \$1,500. Department of Botany, University of Wisconsin-Madison
+
+\ind 2012 -- 2013, The Flora Aeterna Research Grant, \$5,000. Department of Botany, University of Wisconsin-Madison
+
+\ind 2012 -- 2013, Davis Research Grant, \$1,500. Department of Botany, University of Wisconsin-Madison 
+
+\ind 2013, Phi Kappa Phi Honor Society (declined), University of Wisconsin-Madison
+
+\ind 2009, 2010, Education Scholarship for Graduate Student (Fellowship), Sun Yat-sen University, China
+
+\ind 2009, Excellent prize of presentation in English, Sun Yat-sen University, China
+
+\ind 2008, Second Award of National Scholarship, Yunnan University, China
+
+\ind 2006, 2007, Second Award of Donglu Scholarship, Yunnan University, China
+
+
+
+\section{Presentations and Posters}
+\ind \textbf{Daijiang Li}, Donald Waller, 2014 August, Increases in native, not exotic, species plus succession promote biotic homogenization in the sand plain plant communities of central Wisconsin. \emph{99th Ecological Society of America Annual Meeting}, Sacramento, California, USA. (Oral presentation).
+
+\ind \textbf{Daijiang Li}, Donald Waller, 2014 March, Long-term dynamics in pine barrens of central Wisconsin. \emph{Wisconsin Ecology Annual Spring Symposium}, Madison, Wisconsin. (Oral presentation).
+
+
+% \section{Professional Experience}
+
+
+\section{Teaching}
+\ind 2014 August 25-26, Instructor, Software Carpentry Bootcamp, UW-Madison.
+
+\ind 2013 Fall, Teaching Assistant, Vegetation of Wisconsin (Bot 455).
+
+\ind 2013 Spring, Teaching Assistant, Introductory Biology (Bio 152).
+
+\ind 2012 Fall, Teaching Assistant, Vegetation of Wisconsin (Bot 455).
+
+\ind 2010 Fall, Teaching Assistant, Restoration Ecology, Sun Yat-sen University, China.
+
+
+
+\section{Undergraduate Mentoring / Research Training}
+\ind 2014, Kelly Wallin, Prepare leaf samples for leaf nutrient analysis.
+
+\ind 2014, David Barfknecht, Collect and measure plant functional traits. 
+
+\ind 2014, Madeline Grupper, Prepare leaf samples for leaf nutrient analysis.
+
+\ind 2013, Alex Arena, Collect and measure plant functional traits.
+
+\ind 2013, Anna Francke, Changes in overstory structure of pine barrens in Wisconsin from 1958 to 2012.
+
+
+\section{Professional Service and Outreach}
+\ind Manuscript reviewer for: \emph{Journal of Ecology}.
+
+\ind 2014, Darwin day prensenter, UW-Madison.
+
+\ind 2013 -- 2014. Student representative to the Biology Colloquium Committee, Botany department, UW-Madison.
+
+\ind 2013 -- 2014. Graduate student Committee, Botany department, UW-Madison.
+
+\ind 2013 Oct. 6-11, volunteer of the fifth world conference on ecological restoration.
+
+\ind 2012 -- 2013. Department Technical Committee, Botany department, UW-Madison.
+
+
+\section{Skills}
+\ind Plant identification, R, \LaTeX, Linux, Git.
+
+\section{References}
+\ind Dr. Donald. M. Waller (PhD Advisor) \\
+John T. Curtis Professor of Department of Botany\\
+University of Wisconsin-Madison, Madison, WI 53706\\
+608-262-2191, \href{mailto:dmwaller@wisc.edu}{dmwaller@wisc.edu}
+\bigskip
+
+\ind Dr. Anthony R. Ives (Committee member) \\
+Professor of Department of Zoology\\
+University of Wisconsin-Madison, Madison, WI 53706\\
+608-262-9226, \href{mailto:arives@wisc.edu}{arives@wisc.edu}
+\bigskip
+
+\ind Dr. Ellen I. Damschen (Committee member) \\
+Professor of Department of Zoology\\
+University of Wisconsin-Madison, Madison, WI 53706\\
+608-262-4437, \href{mailto:damschen@wisc.edu}{damschen@wisc.edu}
+
+\end{document}
